@@ -19,9 +19,11 @@ On your Raspberry Pi, open a terminal and enter the following:
 
 ```
 sudo -s
-echo "deb http://apt.adafruit.com/raspbian/ wheezy main" >> /etc/apt/sources.list
+echo "deb http://apt.adafruit.com/raspbian/ jessie main" >> /etc/apt/sources.list
 wget -O - -q https://apt.adafruit.com/apt.adafruit.com.gpg.key | apt-key add -
 apt-get update
+apt install node
+apt-get autoremove
 apt-get install occidentalis
 ```
 
